@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=VT323&display=swap");
 
-
-
 html {
   box-sizing: border-box;
 }
@@ -13,6 +11,8 @@ body {
 }
 
 .clock {
+  display: flex;
+  flex-direction: row;
   width: 600px;
   height: 600px;
   background-color: navy;
@@ -31,9 +31,84 @@ body {
   color: white;
   position: absolute;
 }
+#one {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(240deg);
+}
+#two {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(210deg);
+}
 
+#three {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(180deg);
+}
+#four {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(150deg);
+}
+#five {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(120deg);
+}
+#six {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(90deg);
+}
+#seven {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(60deg);
+}
+#eight {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(30deg);
+}
+#nine {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(0deg);
+}
+
+#ten {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(-30deg);
+}
+#eleven {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(-60deg);
+}
+
+#twelve {
+  writing-mode: vertical-rl;
+  text-orientation: initial;
+  position: relative;
+  transform: rotate(-90deg);
+}
 .numero1 {
   transform: rotate(30deg);
+  flex-basis: 50%;
 }
 
 .numero2 {
@@ -90,19 +165,19 @@ body {
   height: 33%;
   background-color: white;
 }
-.backHour{
+.backHour {
   width: 13px;
   height: 10%;
   background-color: white;
 }
 
-.backMinute{
+.backMinute {
   width: 10px;
   height: 12%;
   background-color: white;
 }
 
-.backSeconds{
+.backSeconds {
   width: 2px;
   height: 14%;
   background-color: white;
@@ -128,6 +203,6 @@ body {
   background-color: white;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-60%, -60%);
   border-radius: 50%;
 }
